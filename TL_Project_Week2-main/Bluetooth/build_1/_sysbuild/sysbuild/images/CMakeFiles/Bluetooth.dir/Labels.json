@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth-complete.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-build.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-configure.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-download.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-install.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-mkdir.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-patch.rule"
+		},
+		{
+			"file" : "C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Bluetooth"
+		],
+		"name" : "Bluetooth"
+	}
+}

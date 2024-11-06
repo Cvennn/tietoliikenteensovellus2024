@@ -35,10 +35,17 @@ LOG_MODULE_REGISTER(Lesson4_Exercise2, LOG_LEVEL_INF);
 
 #define RUN_LED_BLINK_INTERVAL 1000
 /* STEP 17 - Define the interval at which you want to send data at */
-#define NOTIFY_INTERVAL         500
+#define NOTIFY_INTERVAL         100
 static bool app_button_state;
 /* STEP 15 - Define the data you want to stream over Bluetooth LE */
 static uint32_t app_sensor_value = 100;
+
+// Lähetettävä anturidata
+uint32_t sensor_x = 1;
+uint32_t sensor_y = 2;
+uint32_t sensor_z = 3;
+uint32_t sensor_dir = 0;
+
 static bool app_button_state;
 
 static const struct bt_data ad[] = {
@@ -67,6 +74,7 @@ static void app_led_cb(bool led_state)
 
 static bool app_button_cb(void)
 {
+	
 	return app_button_state;
 }
 
@@ -77,9 +85,18 @@ void send_data_thread(void)
 		/* Simulate data */
 		simulate_data();
 		/* Send notification, the function sends notifications only if a client is subscribed */
-		my_lbs_send_sensor_notify(app_sensor_value);
-
+		my_lbs_send_sensor_notify(sensor_x);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
+
+		my_lbs_send_sensor_notify(sensor_y);
+		k_sleep(K_MSEC(NOTIFY_INTERVAL));
+
+		my_lbs_send_sensor_notify(sensor_z);
+		k_sleep(K_MSEC(NOTIFY_INTERVAL));
+
+		my_lbs_send_sensor_notify(sensor_dir);
+		k_sleep(K_MSEC(NOTIFY_INTERVAL));
+
 	}
 		
 }

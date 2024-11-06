@@ -1,0 +1,13 @@
+# Target labels
+ Bluetooth
+# Source files and their labels
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/CMakeFiles/Bluetooth-complete.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-build.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-configure.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-download.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-install.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-mkdir.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-patch.rule
+C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/_sysbuild/sysbuild/images/Bluetooth-prefix/src/Bluetooth-stamp/Bluetooth-update.rule

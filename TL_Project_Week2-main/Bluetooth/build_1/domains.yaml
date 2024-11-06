@@ -1,0 +1,7 @@
+default: Bluetooth
+build_dir: C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1
+domains:
+  - name: Bluetooth
+    build_dir: C:/ncs/nordcodes/TLprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build_1/Bluetooth
+flash_order:
+  - Bluetooth
