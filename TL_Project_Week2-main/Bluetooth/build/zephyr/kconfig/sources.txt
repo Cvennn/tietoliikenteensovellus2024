@@ -1,11 +1,3 @@
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\Kconfig.dts
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\Kconfig.modules
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\Kconfig.shield
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\Kconfig.shield.defconfig
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\arch\Kconfig
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\soc\Kconfig
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\soc\Kconfig.defconfig
-C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\Kconfig\soc\Kconfig.soc
 C:\ncs\toolchains\ce3b5ff664\opt\zephyr-sdk\cmake\zephyr\Kconfig
 C:\ncs\v2.7.0\modules\crypto\oberon-psa-crypto\Kconfig.oberon_psa_crypto
 C:\ncs\v2.7.0\modules\hal\cirrus-logic\Kconfig
@@ -3136,3 +3128,11 @@ C:\ncs\v2.7.0\zephyr\subsys\usb\device_next\class\Kconfig.uac2
 C:\ncs\v2.7.0\zephyr\subsys\usb\host\Kconfig
 C:\ncs\v2.7.0\zephyr\subsys\usb\usb_c\Kconfig
 C:\ncs\v2.7.0\zephyr\subsys\zbus\Kconfig
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\Kconfig.dts
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\Kconfig.modules
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\Kconfig.shield
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\Kconfig.shield.defconfig
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\arch\Kconfig
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\soc\Kconfig
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\soc\Kconfig.defconfig
+C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\Kconfig\soc\Kconfig.soc

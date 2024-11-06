@@ -39,21 +39,21 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/hci_ipc/zephyr/subsys/bluetooth/common/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/subsys/bluetooth/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/hci_ipc/zephyr/subsys/bluetooth/host/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/subsys/bluetooth/host/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/hci_ipc/zephyr/subsys/bluetooth/services/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/subsys/bluetooth/services/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/hci_ipc/zephyr/subsys/bluetooth/lib/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/subsys/bluetooth/lib/cmake_install.cmake")
 endif()
 

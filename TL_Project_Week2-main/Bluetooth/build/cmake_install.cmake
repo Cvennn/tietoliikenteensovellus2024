@@ -1,4 +1,4 @@
-# Install script for directory: C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2
+# Install script for directory: C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

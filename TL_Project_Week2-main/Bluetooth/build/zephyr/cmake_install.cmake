@@ -39,236 +39,236 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/arch/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/arch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/lib/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/lib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/soc/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/boards/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/boards/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/subsys/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/subsys/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/drivers/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/drivers/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/mcuboot/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/mcuboot/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/mbedtls/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/trusted-firmware-m/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/trusted-firmware-m/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/cjson/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/cjson/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/azure-sdk-for-c/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/azure-sdk-for-c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/cirrus-logic/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/cirrus-logic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/openthread/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/openthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/suit-processor/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/suit-processor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/memfault-firmware-sdk/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/memfault-firmware-sdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/canopennode/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/canopennode/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/chre/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/chre/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/lz4/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/lz4/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nanopb/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nanopb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/zscilib/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/zscilib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/cmsis/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/cmsis/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/cmsis-dsp/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/cmsis-dsp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/cmsis-nn/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/cmsis-nn/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/fatfs/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/fatfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/hal_nordic/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/hal_nordic/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/hal_st/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/hal_st/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/hal_wurthelektronik/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/hal_wurthelektronik/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/libmetal/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/libmetal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/liblc3/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/liblc3/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/littlefs/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/littlefs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/loramac-node/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/loramac-node/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/lvgl/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/lvgl/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/mipi-sys-t/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/mipi-sys-t/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf_hw_models/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf_hw_models/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/open-amp/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/open-amp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/picolibc/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/picolibc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/segger/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/segger/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/tinycrypt/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/tinycrypt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/uoscore-uedhoc/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/uoscore-uedhoc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/zcbor/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/zcbor/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrfxlib/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrfxlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/connectedhomeip/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/connectedhomeip/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/kernel/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/kernel/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/cmake/flash/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/cmake/flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/cmake/usage/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/cmake/usage/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/zephyr/cmake/reports/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/zephyr/cmake/reports/cmake_install.cmake")
 endif()
 

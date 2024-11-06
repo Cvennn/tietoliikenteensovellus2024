@@ -39,26 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/lib/bin/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/lib/bin/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/lib/dk_buttons_and_leds/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/lib/dk_buttons_and_leds/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/lib/flash_patch/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/lib/flash_patch/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/lib/fatal_error/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/lib/fatal_error/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/lib/boot_banner/cmake_install.cmake")
+  include("C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/lib/boot_banner/cmake_install.cmake")
 endif()
 

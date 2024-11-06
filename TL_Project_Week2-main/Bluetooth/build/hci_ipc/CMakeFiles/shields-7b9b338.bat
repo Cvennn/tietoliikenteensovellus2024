@@ -1,5 +1,5 @@
 @echo off
-cd /D C:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\hci_ipc || (set FAIL_LINE=2& goto :ABORT)
+cd /D C:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\hci_ipc || (set FAIL_LINE=2& goto :ABORT)
 C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe -E echo adafruit_2_8_tft_touch_v2 || (set FAIL_LINE=3& goto :ABORT)
 C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe -E echo adafruit_2_8_tft_touch_v2_nano || (set FAIL_LINE=4& goto :ABORT)
 C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe -E echo adafruit_can_picowbell || (set FAIL_LINE=5& goto :ABORT)

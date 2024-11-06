@@ -1,13 +1,13 @@
 # Target labels
  hci_ipc_subimage
 # Source files and their labels
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage-complete.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-build.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-configure.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-download.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-install.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-mkdir.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-patch.rule
-C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-update.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage-complete.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-build.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-configure.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-download.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-install.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-mkdir.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-patch.rule
+C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-update.rule

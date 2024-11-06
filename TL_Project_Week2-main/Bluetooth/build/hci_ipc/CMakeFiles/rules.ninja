@@ -741,7 +741,7 @@ rule C_STATIC_LIBRARY_LINKER__kernel_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe --regenerate-during-build -SC:\ncs\v2.7.0\zephyr\samples\bluetooth\hci_ipc -BC:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build\hci_ipc
+  command = C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe --regenerate-during-build -SC:\ncs\v2.7.0\zephyr\samples\bluetooth\hci_ipc -BC:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build\hci_ipc
   description = Re-running CMake...
   generator = 1
 

@@ -11,6 +11,8 @@
   "buildDirectory": "build",
   "kconfigFragments": [],
   "snippets": [],
-  "dtcOverlays": [],
+  "dtcOverlays": [
+    "nrf5340dk_nrf5340_cpuapp_ns.overlay"
+  ],
   "extraDtcOverlays": []
 }

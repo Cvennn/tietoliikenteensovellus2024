@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: NONE
+# Project: ADC
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -415,6 +415,25 @@ rule C_STATIC_LIBRARY_LINKER__drivers__interrupt_controller_
 #############################################
 # Rule for compiling C files.
 
+rule C_COMPILER__drivers__adc_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\ncs\toolchains\ce3b5ff664\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__drivers__adc_
+  command = cmd.exe /C "$PRE_LINK && C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe -E rm -f $TARGET_FILE && C:\ncs\toolchains\ce3b5ff664\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\ncs\toolchains\ce3b5ff664\opt\zephyr-sdk\arm-zephyr-eabi\bin\arm-zephyr-eabi-ranlib.exe $TARGET_FILE && $POST_BUILD"
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
 rule C_COMPILER__drivers__bluetooth_
   depfile = $DEP_FILE
   deps = gcc
@@ -682,7 +701,7 @@ rule C_STATIC_LIBRARY_LINKER__kernel_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe --regenerate-during-build -SC:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2 -BC:\ncs\nordcodes\bt-fund\lesson4\blefund_less4_exer2\build
+  command = C:\ncs\toolchains\ce3b5ff664\opt\bin\cmake.exe --regenerate-during-build -SC:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth -BC:\tietoliikenneprojekti\tietoliikenteensovellus2024\TL_Project_Week2-main\Bluetooth\build
   description = Re-running CMake...
   generator = 1
 

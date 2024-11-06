@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage-complete.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/CMakeFiles/hci_ipc_subimage-complete.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-build.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-build.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-configure.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-configure.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-download.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-download.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-install.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-install.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-mkdir.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-mkdir.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-patch.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-patch.rule"
 		},
 		{
-			"file" : "C:/ncs/nordcodes/bt-fund/lesson4/blefund_less4_exer2/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-update.rule"
+			"file" : "C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/modules/nrf/samples/hci_ipc_subimage-prefix/src/hci_ipc_subimage-stamp/hci_ipc_subimage-update.rule"
 		}
 	],
 	"target" : 

@@ -13,6 +13,20 @@
 #include <dk_buttons_and_leds.h>
 #include "my_lbs.h"
 
+#include <zephyr/logging/log.h>
+#include <inttypes.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
+#include <zephyr/sys/util.h>
+#include "adc.h"
+#include <zephyr/device.h>
+#include <zephyr/devicetree.h>
+
+
+
+
 static struct bt_le_adv_param *adv_param = BT_LE_ADV_PARAM(
 	(BT_LE_ADV_OPT_CONNECTABLE |
 	 BT_LE_ADV_OPT_USE_IDENTITY), /* Connectable advertising and use identity address */
@@ -97,6 +111,8 @@ void send_data_thread(void)
 		my_lbs_send_sensor_notify(sensor_dir);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
 
+			
+
 	}
 		
 }
@@ -112,6 +128,17 @@ static void button_changed(uint32_t button_state, uint32_t has_changed)
 		/* STEP 6 - Send indication on a button press */
 		my_lbs_send_button_state_indicate(user_button_state);
 		app_button_state = user_button_state ? true : false;
+		
+
+		if (user_button_state) {
+			if (sensor_dir >= 5){
+				sensor_dir = 0;
+			}
+			else {
+				sensor_dir += 1;
+			}
+		}
+		
 	}
 }
 static void on_connected(struct bt_conn *conn, uint8_t err)
@@ -154,6 +181,17 @@ int main(void)
 {
 	int blink_status = 0;
 	int err;
+
+if(initializeADC() != 0){
+
+	while (1) 
+	{
+		struct Measurement m = readADCValue();
+		printk("x = %d,  y = %d,  z = %d\n",m.x,m.y,m.z);
+		
+		k_sleep(K_MSEC(1000));
+	}
+}
 
 	LOG_INF("Starting Lesson 4 - Exercise 2 \n");
 
