@@ -12,7 +12,11 @@ project(NONE)
 target_sources(app PRIVATE
   src/main.c
   src/my_lbs.c
-)
+  ../Working_ADC_Solution/src/main.c
+  ../Working_ADC_Solution/src/adc.c
+  )
+
 
 # NORDIC SDK APP END
 zephyr_library_include_directories(.)
+target_include_directories(test PRIVATE ${../Working_ADC_Solution})
