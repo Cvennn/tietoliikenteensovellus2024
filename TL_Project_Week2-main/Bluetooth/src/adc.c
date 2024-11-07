@@ -93,15 +93,15 @@ struct Measurement readADCValue(void)
 		} else {
             if(i==0)
             {
-                m.x = val_mv;
+                m.sensor_x = val_mv;
             }
             else if (i==1)
             {
-               m.y = val_mv;
+               m.sensor_y = val_mv;
             }
             else if (i==2)
             {
-                m.z = val_mv;
+                m.sensor_z = val_mv;
             }           
 			//printk("%"PRId16, buf);
 		}
@@ -117,15 +117,15 @@ struct Measurement readADCValue(void)
         {
 			if(i==0)
             {
-                m.x = val_mv;
+                m.sensor_x = val_mv;
             }
             else if (i==1)
             {
-               m.y = val_mv;
+               m.sensor_y = val_mv;
             }
             else if (i==2)
             {
-                m.z = val_mv;
+                m.sensor_z = val_mv;
             }           
             //printk(" = %"PRId32" mV\n", val_mv);
 		}

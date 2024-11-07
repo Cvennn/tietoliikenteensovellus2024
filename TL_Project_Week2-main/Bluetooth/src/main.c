@@ -55,9 +55,9 @@ static bool app_button_state;
 static uint32_t app_sensor_value = 100;
 
 // Lähetettävä anturidata
-uint32_t sensor_x = 1;
-uint32_t sensor_y = 2;
-uint32_t sensor_z = 3;
+//uint32_t m.sensor_x;
+//uint32_t m.sensor_y;
+//uint32_t m.sensor_z;
 uint32_t sensor_dir = 0;
 
 static bool app_button_state;
@@ -99,19 +99,24 @@ void send_data_thread(void)
 		/* Simulate data */
 		simulate_data();
 		/* Send notification, the function sends notifications only if a client is subscribed */
-		my_lbs_send_sensor_notify(sensor_x);
+
+		struct Measurement m = readADCValue();
+		printk("x = %d,  y = %d,  z = %d\n",m.sensor_x,m.sensor_y,m.sensor_z);
+		
+		k_sleep(K_MSEC(1000));
+
+		my_lbs_send_sensor_notify(m.sensor_x);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
 
-		my_lbs_send_sensor_notify(sensor_y);
+		my_lbs_send_sensor_notify(m.sensor_y);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
 
-		my_lbs_send_sensor_notify(sensor_z);
+		my_lbs_send_sensor_notify(m.sensor_z);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
 
 		my_lbs_send_sensor_notify(sensor_dir);
 		k_sleep(K_MSEC(NOTIFY_INTERVAL));
 
-			
 
 	}
 		
@@ -184,13 +189,6 @@ int main(void)
 
 if(initializeADC() != 0){
 
-	while (1) 
-	{
-		struct Measurement m = readADCValue();
-		printk("x = %d,  y = %d,  z = %d\n",m.x,m.y,m.z);
-		
-		k_sleep(K_MSEC(1000));
-	}
 }
 
 	LOG_INF("Starting Lesson 4 - Exercise 2 \n");
