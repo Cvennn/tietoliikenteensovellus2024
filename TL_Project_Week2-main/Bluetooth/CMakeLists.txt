@@ -12,7 +12,6 @@ project(ADC)
 target_sources(app PRIVATE
   src/main.c
   src/my_lbs.c
-
   src/adc.c
   src/adc.h
 )
@@ -20,4 +19,3 @@ target_sources(app PRIVATE
 
 # NORDIC SDK APP END
 zephyr_library_include_directories(.)
-target_include_directories(test PRIVATE ${../Working_ADC_Solution})
