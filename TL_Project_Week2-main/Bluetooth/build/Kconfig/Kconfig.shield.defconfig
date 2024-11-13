@@ -1,2 +1,0 @@
-osource "c:/ncs/nordcodes/tlprojekti/tietoliikenteensovellus2024/tl_project_week2-main/bluetooth/boards/shields/*/Kconfig.defconfig"
-osource "C:/ncs/v2.7.0/nrf/boards/shields/*/Kconfig.defconfig"
