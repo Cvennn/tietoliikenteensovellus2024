@@ -16,5 +16,6 @@ target_sources(app PRIVATE
   src/adc.h
 )
 
+
 # NORDIC SDK APP END
 zephyr_library_include_directories(.)
