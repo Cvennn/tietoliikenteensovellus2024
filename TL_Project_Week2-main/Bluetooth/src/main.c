@@ -55,9 +55,6 @@ static bool app_button_state;
 static uint32_t app_sensor_value = 100;
 
 // Lähetettävä anturidata
-//uint32_t m.sensor_x;
-//uint32_t m.sensor_y;
-//uint32_t m.sensor_z;
 uint32_t sensor_dir = 0;
 
 static bool app_button_state;

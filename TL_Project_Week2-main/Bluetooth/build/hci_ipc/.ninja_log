@@ -242,3 +242,11 @@
 81971	82493	7526659849919711	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/app.hex	fb14b0299dfaa354
 82493	83314	7526659858195194	zephyr/merged_CPUNET.hex	b9890e5d35d3e0e1
 82493	83314	7526659858195194	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/merged_CPUNET.hex	b9890e5d35d3e0e1
+43	136	7526680856514453	zephyr/include/generated/zephyr_commit.h	ef6a532b7b25664
+43	136	7526680856514453	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/include/generated/zephyr_commit.h	ef6a532b7b25664
+51	144	7526680855319594	zephyr/include/generated/ncs_commit.h	bd8999c9ef71bdcc
+51	144	7526680855319594	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/include/generated/ncs_commit.h	bd8999c9ef71bdcc
+45	173	7526716629506010	zephyr/include/generated/zephyr_commit.h	ef6a532b7b25664
+45	173	7526716629506010	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/include/generated/zephyr_commit.h	ef6a532b7b25664
+55	184	7526716618891447	zephyr/include/generated/ncs_commit.h	bd8999c9ef71bdcc
+55	184	7526716618891447	C:/tietoliikenneprojekti/tietoliikenteensovellus2024/TL_Project_Week2-main/Bluetooth/build/hci_ipc/zephyr/include/generated/ncs_commit.h	bd8999c9ef71bdcc
