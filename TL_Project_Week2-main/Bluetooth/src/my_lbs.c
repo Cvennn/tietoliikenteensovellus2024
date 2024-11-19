@@ -8,6 +8,7 @@
  *  @brief LED Button Service (LBS) sample
  */
 
+
 #include <zephyr/types.h>
 #include <stddef.h>
 #include <string.h>
@@ -21,6 +22,7 @@
 #include <zephyr/bluetooth/conn.h>
 #include <zephyr/bluetooth/uuid.h>
 #include <zephyr/bluetooth/gatt.h>
+
 
 #include "my_lbs.h"
 
@@ -114,8 +116,8 @@ BT_GATT_SERVICE_DEFINE(
 			       write_led, NULL),
 	/* STEP 12 - Create and add the MYSENSOR characteristic and its CCCD  */
 	BT_GATT_CHARACTERISTIC(BT_UUID_LBS_MYSENSOR,
-			       BT_GATT_CHRC_NOTIFY,
-			       BT_GATT_PERM_NONE, NULL, NULL,
+			       BT_GATT_CHRC_READ | BT_GATT_CHRC_NOTIFY,
+			       BT_GATT_PERM_READ, NULL, NULL,
 			       NULL),
 
 	BT_GATT_CCC(mylbsbc_ccc_mysensor_cfg_changed,
@@ -152,6 +154,7 @@ int my_lbs_send_button_state_indicate(bool button_state)
 /* STEP 14 - Define the function to send notifications for the MYSENSOR characteristic */
 int my_lbs_send_sensor_notify(uint32_t sensor_value)
 {
+
 	if (!notify_mysensor_enabled) {
 		return -EACCES;
 	}

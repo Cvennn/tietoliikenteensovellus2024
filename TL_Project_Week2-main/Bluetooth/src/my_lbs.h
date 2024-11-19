@@ -104,12 +104,11 @@ int my_lbs_send_button_state_notify(bool button_state);
  */
 int my_lbs_send_sensor_notify(uint32_t sensor_value);
 
+
+
 #ifdef __cplusplus
 }
 #endif
 
-/**
- * @}
- */
 
 #endif /* BT_LBS_H_ */

@@ -55,7 +55,7 @@ static bool app_button_state;
 static uint32_t app_sensor_value = 100;
 
 // Lähetettävä anturidata
-uint32_t sensor_dir = 0;
+uint32_t sensor_dir = 0;	
 
 static bool app_button_state;
 
@@ -90,12 +90,13 @@ static bool app_button_cb(void)
 }
 
 /* STEP 18.1 - Define the thread function  */
+
 void send_data_thread(void)
 {
 	while(1){
-		/* Simulate data */
+		// Simulate data 
 		simulate_data();
-		/* Send notification, the function sends notifications only if a client is subscribed */
+		// Send notification, the function sends notifications only if a client is subscribed 
 
 		struct Measurement m = readADCValue();
 		printk("x = %d,  y = %d,  z = %d\n",m.sensor_x,m.sensor_y,m.sensor_z);
@@ -118,6 +119,8 @@ void send_data_thread(void)
 	}
 		
 }
+
+
 static struct my_lbs_cb app_callbacks = {
 	.led_cb = app_led_cb,
 	.button_cb = app_button_cb,
