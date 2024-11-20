@@ -1,12 +1,13 @@
 #ifndef ADC_H_KJJ
 #define ADC_H_KJJ
 
-struct Measurement
+typedef struct Measurement
 {
+   uint16_t sensor_dir; 
    uint16_t sensor_x;
    uint16_t sensor_y;
    uint16_t sensor_z;
-};
+} sensor_data_s;
 
 int initializeADC(void);
 struct Measurement readADCValue(void);
