@@ -9,23 +9,29 @@ print(calclenght(test1,test2))
 '''
 #lasketaan pisteiden etäisyys
 def calclenght(centerpoint,datapoint):
-    x = centerpoint[0,0] - datapoint[0,0]
-    y = centerpoint[0,1] - datapoint[0,1]
-    z = centerpoint[0,2] - datapoint[0,2]
+    x = centerpoint[0] - datapoint[0]
+    y = centerpoint[0] - datapoint[0]
+    z = centerpoint[0] - datapoint[0]
 
-    lenght = math.sqrt(x**2 + y**2 + z**2)
+    lenght = math.sqrt((x**2) + (y**2) + (z**2))
 
-    print ("length:",lenght)
+    #print ("length:",lenght)
     return lenght
 
+def newcp(cumul, lkm):
+    newcp = np.zeros((1,3))
+    for i in range(3):
+        newcp[0,i] = cumul[0,i] / lkm
+    return newcp
+
 #selvitetään millä pisteellä on lyhin etäisyys
-def lenghtcheck(cp0,cp1,cp2,cp3,cp4,cp5,datapoint):
-    result0 = calclenght(cp0, datapoint)
-    result1 = calclenght(cp1, datapoint)
-    result2 = calclenght(cp2, datapoint)
-    result3 = calclenght(cp3, datapoint)
-    result4 = calclenght(cp4, datapoint)
-    result5 = calclenght(cp5, datapoint)
+def lenghtcheck(cp0,datapoint):
+    result0 = calclenght(cp0[0], datapoint)
+    result1 = calclenght(cp0[1], datapoint)
+    result2 = calclenght(cp0[2], datapoint)
+    result3 = calclenght(cp0[3], datapoint)
+    result4 = calclenght(cp0[4], datapoint)
+    result5 = calclenght(cp0[5], datapoint)
     result_value = 5000
     cpwin = 0
     #selvitetään lyhin pituus näistä tuloksista
@@ -36,7 +42,7 @@ def lenghtcheck(cp0,cp1,cp2,cp3,cp4,cp5,datapoint):
         result_value = result1
         cpwin = 1
     if result_value >= result2:
-        result_value = result2    
+        result_value = result2
         cpwin = 2
     if result_value >= result3:
         result_value = result3
@@ -58,18 +64,13 @@ for i in range(300):
     for x in range(3):
         testidata[i,x] = np.random.randint(1200,1800)
     
-print(testidata)
+#print(testidata)
 
 
 
-# määritellään arvottu keskipiste muuttuja
+# määritellään arvottu keskipiste muuttuja, kumulatiivinen muuttuja ja lukumäärä 
 # centerpoint
-cp0 = np.zeros((1,3))
-cp1 = np.zeros((1,3))
-cp2 = np.zeros((1,3))
-cp3 = np.zeros((1,3))
-cp4 = np.zeros((1,3))
-cp5 = np.zeros((1,3))
+cp0 = np.zeros((6,3))
 
 cumul_cp0 = np.zeros((1,3))
 cumul_cp1 = np.zeros((1,3))
@@ -77,6 +78,10 @@ cumul_cp2 = np.zeros((1,3))
 cumul_cp3 = np.zeros((1,3))
 cumul_cp4 = np.zeros((1,3))
 cumul_cp5 = np.zeros((1,3))
+
+#lukumäärää seuraavat arvot
+lkm = np.zeros((1,6))
+
 
 min_value = 3000
 max_value = 0
@@ -90,23 +95,68 @@ for i in range(300):
             max_value = data_value
             
 # arvotaan satunnainen luku minimi ja maksimi arvojen väliltä
-for x in range(0,3,1):
-    cp0[0,x] = np.random.randint(min_value, max_value)
-    cp1[0,x] = np.random.randint(min_value, max_value)
-    cp2[0,x] = np.random.randint(min_value, max_value)
-    cp3[0,x] = np.random.randint(min_value, max_value)
-    cp4[0,x] = np.random.randint(min_value, max_value)
-    cp5[0,x] = np.random.randint(min_value, max_value)
+for y in range(0,6,1):
+    for x in range(0,3,1):
+        cp0[y,x] = np.random.randint(min_value, max_value)
 
+
+#looppi koko datan läpi käymiseen
+for i in range(10):
+    for x in range(len(testidata)):
 
 # voittaja arvoon lisätään datapisteen arvo
-cpwin = lenghtcheck(cp0,cp1,cp2,cp3,cp4,cp5, testidata)
-
-if cpwin == 0:
-    cumul_cp0 = cumul_cp0 + testidata[i,x]
-
-
-
-
-
+        cpwin = lenghtcheck(cp0, testidata[x])
+        #print(cpwin)
+        if cpwin == 0:
+            cumul_cp0[0,0] += testidata[x,0]
+            cumul_cp0[0,1] += testidata[x,1]
+            cumul_cp0[0,2] += testidata[x,2]
+            lkm[0,0] += 1
+        if cpwin == 1:
+            cumul_cp1[0,0] += testidata[x,0]
+            cumul_cp1[0,1] += testidata[x,1]
+            cumul_cp1[0,2] += testidata[x,2]
+            lkm[0,1] += 1
+        if cpwin == 2:
+            cumul_cp2[0,0] += testidata[x,0]
+            cumul_cp2[0,1] += testidata[x,1]
+            cumul_cp2[0,2] += testidata[x,2]
+            lkm[0,2] += 1
+        if cpwin == 3:
+            cumul_cp3[0,0] += testidata[x,0]
+            cumul_cp3[0,1] += testidata[x,1]
+            cumul_cp3[0,2] += testidata[x,2]
+            lkm[0,3] += 1
+        if cpwin == 4:
+            cumul_cp4[0,0] += testidata[x,0]
+            cumul_cp4[0,1] += testidata[x,1]
+            cumul_cp4[0,2] += testidata[x,2]
+            lkm[0,4] += 1
+        if cpwin == 5:
+            cumul_cp5[0,0] += testidata[x,0]
+            cumul_cp5[0,1] += testidata[x,1]
+            cumul_cp5[0,2] += testidata[x,2]
+            lkm[0,5] += 1
     
+    print("old: ",cp0[0])
+    #uusi keskipiste
+    cp0[0] = newcp(cumul_cp0, lkm[0,0])
+    cp0[1] = newcp(cumul_cp1, lkm[0,1])
+    cp0[2] = newcp(cumul_cp2, lkm[0,2])
+    cp0[3] = newcp(cumul_cp3, lkm[0,3])
+    cp0[4] = newcp(cumul_cp4, lkm[0,4])
+    cp0[5] = newcp(cumul_cp5, lkm[0,5])
+    print("new: ",cp0[0])
+    #jos joku piste ei saanut yhtään datapisteitä, arvotaan sille uusi keskipiste
+    for n in range(6):
+        if lkm[0,n] == 0:
+            for x in range(0,3,1):
+                cp0[n,x] = np.random.randint(min_value, max_value)
+
+
+# lopullinen tallennus .h tiedostoon
+result_str = np.array_str(cp0)
+with open('keskipisteet.h','w') as f:
+    f.write(result_str)
+
+
