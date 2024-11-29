@@ -1,12 +1,23 @@
 import numpy as np
 import math as math
+import pandas as pd
 
+#headers for csv data
+HEADERS = ["ID", "Timestamp", "groupid",
+            "Column 4", "Column 5", "sensor_x",
+              "sensor_y", "sensor_z", "Column 9",
+                "Column 10", "sensor_dir"]
+mydata = pd.read_csv("data.csv", sep=";", header=1, names=HEADERS)
+#mytable numpy taulukko csv tiedoston datalle
+mytable = np.zeros((len(mydata), 3))
+'''
+sensor index locations to use with pandas
+x = 5
+y = 6
+z = 7
+dir = 10
+'''
 
-'''
-test1 = np.ones((1,3))
-test2 = np.zeros((1,3))
-print(calclenght(test1,test2))
-'''
 #lasketaan pisteiden etäisyys
 def calclenght(centerpoint,datapoint):
     x = centerpoint[0] - datapoint[0]
@@ -57,15 +68,21 @@ def lenghtcheck(cp0,datapoint):
            
     return cpwin
 
+#haetaan csv taulukosta omaan numpy taulukkoon dataa
+for i in range(len(mytable)):
+    mytable[i,0] = mydata.iloc[i,5]
+    mytable[i,1] = mydata.iloc[i,6]
+    mytable[i,2] = mydata.iloc[i,7]
+#    mytable[i,3] = mydata.iloc[i,10] #this line contains sensor_dir value
 
-
+'''
 testidata = np.ones ((300,3))
 for i in range(300):
     for x in range(3):
         testidata[i,x] = np.random.randint(1200,1800)
     
 #print(testidata)
-
+'''
 
 
 # määritellään arvottu keskipiste muuttuja, kumulatiivinen muuttuja ja lukumäärä 
@@ -86,9 +103,9 @@ lkm = np.zeros((1,6))
 min_value = 3000
 max_value = 0
 # selvitetään minimi ja maksimi arvot datasta
-for i in range(300):
+for i in range(len(mytable)):
     for x in range(3):
-        data_value = testidata[i,x]
+        data_value = mytable[i,x]
         if data_value <= min_value:
             min_value = data_value
         if data_value >= max_value:
@@ -102,40 +119,40 @@ for y in range(0,6,1):
 
 #looppi koko datan läpi käymiseen
 for i in range(10):
-    for x in range(len(testidata)):
+    for x in range(len(mytable)):
 
 # voittaja arvoon lisätään datapisteen arvo
-        cpwin = lenghtcheck(cp0, testidata[x])
+        cpwin = lenghtcheck(cp0, mytable[x])
         #print(cpwin)
         if cpwin == 0:
-            cumul_cp0[0,0] += testidata[x,0]
-            cumul_cp0[0,1] += testidata[x,1]
-            cumul_cp0[0,2] += testidata[x,2]
+            cumul_cp0[0,0] += mytable[x,0]
+            cumul_cp0[0,1] += mytable[x,1]
+            cumul_cp0[0,2] += mytable[x,2]
             lkm[0,0] += 1
         if cpwin == 1:
-            cumul_cp1[0,0] += testidata[x,0]
-            cumul_cp1[0,1] += testidata[x,1]
-            cumul_cp1[0,2] += testidata[x,2]
+            cumul_cp1[0,0] += mytable[x,0]
+            cumul_cp1[0,1] += mytable[x,1]
+            cumul_cp1[0,2] += mytable[x,2]
             lkm[0,1] += 1
         if cpwin == 2:
-            cumul_cp2[0,0] += testidata[x,0]
-            cumul_cp2[0,1] += testidata[x,1]
-            cumul_cp2[0,2] += testidata[x,2]
+            cumul_cp2[0,0] += mytable[x,0]
+            cumul_cp2[0,1] += mytable[x,1]
+            cumul_cp2[0,2] += mytable[x,2]
             lkm[0,2] += 1
         if cpwin == 3:
-            cumul_cp3[0,0] += testidata[x,0]
-            cumul_cp3[0,1] += testidata[x,1]
-            cumul_cp3[0,2] += testidata[x,2]
+            cumul_cp3[0,0] += mytable[x,0]
+            cumul_cp3[0,1] += mytable[x,1]
+            cumul_cp3[0,2] += mytable[x,2]
             lkm[0,3] += 1
         if cpwin == 4:
-            cumul_cp4[0,0] += testidata[x,0]
-            cumul_cp4[0,1] += testidata[x,1]
-            cumul_cp4[0,2] += testidata[x,2]
+            cumul_cp4[0,0] += mytable[x,0]
+            cumul_cp4[0,1] += mytable[x,1]
+            cumul_cp4[0,2] += mytable[x,2]
             lkm[0,4] += 1
         if cpwin == 5:
-            cumul_cp5[0,0] += testidata[x,0]
-            cumul_cp5[0,1] += testidata[x,1]
-            cumul_cp5[0,2] += testidata[x,2]
+            cumul_cp5[0,0] += mytable[x,0]
+            cumul_cp5[0,1] += mytable[x,1]
+            cumul_cp5[0,2] += mytable[x,2]
             lkm[0,5] += 1
     
     print("old: ",cp0[0])
