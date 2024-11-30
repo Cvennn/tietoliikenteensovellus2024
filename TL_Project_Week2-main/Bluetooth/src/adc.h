@@ -7,7 +7,7 @@ typedef struct Measurement
    uint16_t sensor_x;
    uint16_t sensor_y;
    uint16_t sensor_z;
-   uint16_t sensor_dir; //muutos 14.11
+   
 };
 
 int initializeADC(void);
