@@ -8,4 +8,4 @@ Tietokantaan luodaan TCP-rajapinta ja HTTP API. Kerättyä dataa haetaan kannett
 Projektissa opetetaan k-means algoritmi tunnistamaan anturidatan osoittama suunta. Algoritmi opetetaan opetusdatalla, jota kerätään kuudesta eri suunnasta.
 Opetukseen tehty ohjelma laskee kuusi satunnaista keskipistettä jokaista datapistettä kohden ja lajitteleen datapisteet lähimmälle satunnaisesti arvotulle pisteelle.
 Keskipisteitä lasketaan monta kertaa, kunnes keskipiste ei enään muutu. Lopulliset pisteet tallennetaan .h tiedostoon, mikä liitetään suuntaa tunnistavaan koodiin.
-![kmeans clustering.PNG](kmeans clustering.PNG)
+![kmeansclustering.PNG](kmeansclustering.PNG)
