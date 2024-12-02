@@ -8,6 +8,8 @@ Projektissa käytettyä ohjelmistoa: NRF Connect, VSCode, GitHub, Rufus.
 
 ![Arkkitehtuurikuva.drawio.png](Arkkitehtuurikuva.drawio.png)
 
+Kuva 1. Projektin arkkitehtuurikuva
+
 ## Opetusdatan kerääminen
 Anturidataa kerätään nrf5340dk alustaa käyttäen. Alustalle on tehty koodi, joka lukee kiihtyvyysanturilta tulevaa dataa ja lähettää sen langattomasti rasberry pi koneelle bluetooth low energyn välityksellä.
 Rasberry laitteelle on asennettu linux ympäristö ja laitteelle on tehty python ohjelma, mikä tilaa ja vastaanottaa nrf5340dk alustan bluetooth lähetystä.
@@ -23,6 +25,7 @@ Keskipisteitä lasketaan jokaisesta datapisteestä, kunnes keskipisteet eivät e
 
 ![kmeansclustering.PNG](kmeansclustering.PNG)
 
+Kuva 2. K-means algoritmin ensimmäiset keskipisteet ja datapisteet.
 
 ## Suuntaa tunnistava ohjelma
 NRF5340dk alustalle luodaan ohjelma, joka tunnistaa anturin osoittaman suunnan.
