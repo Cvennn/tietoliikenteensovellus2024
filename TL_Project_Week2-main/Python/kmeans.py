@@ -9,7 +9,8 @@ HEADERS = ["ID", "Timestamp", "groupid",
                 "Column 10", "sensor_dir"]
 mydata = pd.read_csv("data.csv", sep=";", header=1, names=HEADERS)
 #mytable numpy taulukko csv tiedoston datalle
-mytable = np.zeros((len(mydata), 3))
+mytable = np.ones((len(mydata), 3))
+
 '''
 sensor index locations to use with pandas
 x = 5
@@ -31,8 +32,12 @@ def calclenght(centerpoint,datapoint):
 
 def newcp(cumul, lkm):
     newcp = np.zeros((1,3))
+    print("newcp val/lkm: ",cumul, " ", lkm)
+    #print("lkm: ",np.dtype(lkm))
+    
     for i in range(3):
         newcp[0,i] = cumul[0,i] / lkm
+    print(newcp[0])
     return newcp
 
 #selvitetään millä pisteellä on lyhin etäisyys
@@ -74,7 +79,8 @@ for i in range(len(mytable)):
     mytable[i,1] = mydata.iloc[i,6]
     mytable[i,2] = mydata.iloc[i,7]
 #    mytable[i,3] = mydata.iloc[i,10] #this line contains sensor_dir value
-
+mytable.astype(np.int64)
+print("len :",len(mytable))
 '''
 testidata = np.ones ((300,3))
 for i in range(300):
@@ -84,10 +90,10 @@ for i in range(300):
 #print(testidata)
 '''
 
-
+#print("dtype: ", np.dtype(mytable[0,0]))
 # määritellään arvottu keskipiste muuttuja, kumulatiivinen muuttuja ja lukumäärä 
 # centerpoint
-cp0 = np.zeros((6,3))
+cp0 = np.ones((6,3))
 
 cumul_cp0 = np.zeros((1,3))
 cumul_cp1 = np.zeros((1,3))
@@ -96,11 +102,12 @@ cumul_cp3 = np.zeros((1,3))
 cumul_cp4 = np.zeros((1,3))
 cumul_cp5 = np.zeros((1,3))
 
+
 #lukumäärää seuraavat arvot
 lkm = np.zeros((1,6))
 
 
-min_value = 3000
+min_value = 10000
 max_value = 0
 # selvitetään minimi ja maksimi arvot datasta
 for i in range(len(mytable)):
@@ -110,7 +117,7 @@ for i in range(len(mytable)):
             min_value = data_value
         if data_value >= max_value:
             max_value = data_value
-            
+
 # arvotaan satunnainen luku minimi ja maksimi arvojen väliltä
 for y in range(0,6,1):
     for x in range(0,3,1):
@@ -118,44 +125,49 @@ for y in range(0,6,1):
 
 
 #looppi koko datan läpi käymiseen
-for i in range(10):
+for i in range(1):
     for x in range(len(mytable)):
 
 # voittaja arvoon lisätään datapisteen arvo
         cpwin = lenghtcheck(cp0, mytable[x])
         #print(cpwin)
         if cpwin == 0:
-            cumul_cp0[0,0] += mytable[x,0]
-            cumul_cp0[0,1] += mytable[x,1]
-            cumul_cp0[0,2] += mytable[x,2]
+            cumul_cp0[0,0] += mytable[x,0] 
+            cumul_cp0[0,1] += mytable[x,1] 
+            cumul_cp0[0,2] += mytable[x,2] 
             lkm[0,0] += 1
-        if cpwin == 1:
+            print("cumul0: ",cumul_cp0)
+        elif cpwin == 1:
             cumul_cp1[0,0] += mytable[x,0]
             cumul_cp1[0,1] += mytable[x,1]
             cumul_cp1[0,2] += mytable[x,2]
             lkm[0,1] += 1
-        if cpwin == 2:
+            print("cumul1: ",cumul_cp1)
+        elif cpwin == 2:
             cumul_cp2[0,0] += mytable[x,0]
             cumul_cp2[0,1] += mytable[x,1]
             cumul_cp2[0,2] += mytable[x,2]
             lkm[0,2] += 1
-        if cpwin == 3:
+            print("cumul2: ",cumul_cp2)
+        elif cpwin == 3:
             cumul_cp3[0,0] += mytable[x,0]
             cumul_cp3[0,1] += mytable[x,1]
             cumul_cp3[0,2] += mytable[x,2]
             lkm[0,3] += 1
-        if cpwin == 4:
+            print("cumul3: ",cumul_cp3)
+        elif cpwin == 4:
             cumul_cp4[0,0] += mytable[x,0]
             cumul_cp4[0,1] += mytable[x,1]
             cumul_cp4[0,2] += mytable[x,2]
             lkm[0,4] += 1
-        if cpwin == 5:
+            print("cumul4: ",cumul_cp4)
+        elif cpwin == 5:
             cumul_cp5[0,0] += mytable[x,0]
             cumul_cp5[0,1] += mytable[x,1]
             cumul_cp5[0,2] += mytable[x,2]
             lkm[0,5] += 1
+            print("cumul5: ", cumul_cp5)
     
-    print("old: ",cp0[0])
     #uusi keskipiste
     cp0[0] = newcp(cumul_cp0, lkm[0,0])
     cp0[1] = newcp(cumul_cp1, lkm[0,1])
@@ -163,7 +175,9 @@ for i in range(10):
     cp0[3] = newcp(cumul_cp3, lkm[0,3])
     cp0[4] = newcp(cumul_cp4, lkm[0,4])
     cp0[5] = newcp(cumul_cp5, lkm[0,5])
-    print("new: ",cp0[0])
+
+    cumul_cp0 = np.ones((1,3))
+    #print("new: ",cp0[0])
     #jos joku piste ei saanut yhtään datapisteitä, arvotaan sille uusi keskipiste
     for n in range(6):
         if lkm[0,n] == 0:
