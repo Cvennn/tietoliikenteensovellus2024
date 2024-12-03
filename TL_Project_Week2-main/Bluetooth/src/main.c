@@ -49,7 +49,7 @@ LOG_MODULE_REGISTER(Lesson4_Exercise2, LOG_LEVEL_INF);
 
 #define RUN_LED_BLINK_INTERVAL 1000
 /* STEP 17 - Define the interval at which you want to send data at */
-#define NOTIFY_INTERVAL         200
+#define NOTIFY_INTERVAL         400
 static bool app_button_state;
 /* STEP 15 - Define the data you want to stream over Bluetooth LE */
 static uint32_t app_sensor_value = 100;
