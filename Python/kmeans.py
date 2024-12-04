@@ -181,7 +181,7 @@ for i in range(1000):
 
 
 #keskipisteiden järjestäminen
-# otetaan jokaiselta cp0 "kollumnista" kaikki arvot, jotka järjestetään suuruusjärjestykseen
+# otetaan jokaiselta cp0 sarake kaikki arvot, jotka järjestetään suuruusjärjestykseen
 sorted_by_x = cp0[np.argsort(cp0[:, 0])[::-1]]
 sorted_by_y = cp0[np.argsort(cp0[:, 1])[::-1]]
 sorted_by_z = cp0[np.argsort(cp0[:, 2])[::-1]]
@@ -197,11 +197,15 @@ sorted_cp0 = np.array([
     sorted_by_z[-1]   # lowest z
 ])
 
-# lopullinen tallennus .h tiedostoon
-result_str = np.array_str(sorted_cp0)
-with open('keskipisteet.h', 'w')as f:
-    f.write("int CP=")
-with open('keskipisteet.h','a') as f:
-    f.write(result_str)
-    f.write(";")
 
+# lopullinen tallennus .h tiedostoon
+# Convert the NumPy array to a C-style array string
+result_str = "{\n" + ",\n".join("{" + ", ".join(map(str, row)) + "}" for row in sorted_cp0) + "\n}"
+
+# Write the array to a .h file
+with open('keskipisteet.h', 'w') as f:
+    f.write("#ifndef KESKIPISTEET_H\n#define KESKIPISTEET_H\n\n")
+    f.write(f"int CP[{sorted_cp0.shape[0]}][{sorted_cp0.shape[1]}] = {result_str};\n")
+    f.write("\n#endif // KESKIPISTEET_H\n")
+
+print("Header file 'keskipisteet.h' has been created.")
