@@ -55,10 +55,7 @@ static bool app_button_state;
 static uint32_t app_sensor_value = 100;
 
 // Lähetettävä anturidata
-//uint32_t m.sensor_x;
-//uint32_t m.sensor_y;
-//uint32_t m.sensor_z;
-uint32_t sensor_dir = 0;
+uint32_t sensor_dir = 0;	
 
 static bool app_button_state;
 
@@ -93,6 +90,7 @@ static bool app_button_cb(void)
 }
 
 /* STEP 18.1 - Define the thread function  */
+
 void send_data_thread(void)
 {
 	while(1){
@@ -124,6 +122,8 @@ void send_data_thread(void)
 	}
 		
 }
+
+
 static struct my_lbs_cb app_callbacks = {
 	.led_cb = app_led_cb,
 	.button_cb = app_button_cb,

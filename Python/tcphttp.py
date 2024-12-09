@@ -2,7 +2,7 @@ import requests
 import csv
 
 URL = "http://172.20.241.9/luedataa_kannasta_groupid_csv.php"
-GROUP_ID = "999" 
+GROUP_ID = "212" 
 
 
 CSV_FILE = "data.csv"
