@@ -30,9 +30,12 @@ Opetukseen tehty ohjelma laskee kuusi satunnaista keskipistettä jokaista datapi
 Jokaista keskipistettä vastaava datapisteiden arvot summataan ja jaetaan keskipisteitä vastaavien datapisteiden lukumäärällä. Näin saadaan laskettua uusi keskipiste, josta lasketaan uudet keskipisteet.
 Keskipisteitä lasketaan jokaisesta datapisteestä, kunnes keskipisteet eivät enään muutu. Lopulliset pisteet tallennetaan .h tiedostoon, mikä liitetään suuntaa tunnistavaan koodiin.
 
-![K-means algoritmin ensimmäiset keskipisteet ja datapisteet.](kmeansclustering.PNG)
-> **KUVA 2**. K-means algoritmin ensimmäiset keskipisteet ja datapisteet.
+![K-means algoritmin keskipisteet ja datapisteet.](centrepoints.PNG)
+> **KUVA 2**. K-means algoritmin keskipisteet ja datapisteet.
 
 
 ## Suuntaa tunnistava ohjelma
 NRF5340dk alustalle luodaan ohjelma, joka tunnistaa anturin osoittaman suunnan.
+
+![Konfuusiomatriisi anturin suunnasta.](confusionmatrix.PNG)
+> **KUVA 3**. Konfuusiomatriisi anturin suunnasta.
