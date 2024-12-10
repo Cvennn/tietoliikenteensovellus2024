@@ -30,7 +30,7 @@ Opetukseen tehty ohjelma laskee kuusi satunnaista keskipistettä jokaista datapi
 Jokaista keskipistettä vastaava datapisteiden arvot summataan ja jaetaan keskipisteitä vastaavien datapisteiden lukumäärällä. Näin saadaan laskettua uusi keskipiste, josta lasketaan uudet keskipisteet.
 Keskipisteitä lasketaan jokaisesta datapisteestä, kunnes keskipisteet eivät enään muutu. Lopulliset pisteet tallennetaan .h tiedostoon, mikä liitetään suuntaa tunnistavaan koodiin.
 
-![K-means algoritmin keskipisteet ja datapisteet.](centrepoints.png)
+![K-means algoritmin keskipisteet ja datapisteet.](centrepoints.PNG)
 > **KUVA 2**. K-means algoritmin keskipisteet ja datapisteet.
 
 
