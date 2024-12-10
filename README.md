@@ -36,5 +36,6 @@ Keskipisteitä lasketaan jokaisesta datapisteestä, kunnes keskipisteet eivät e
 
 ## Suuntaa tunnistava ohjelma
 NRF5340dk alustalle luodaan ohjelma, joka tunnistaa anturin osoittaman suunnan.
-![Konfuusiomatriisi anturin suunnasta.](confusionmatrix.png)
+
+![Konfuusiomatriisi anturin suunnasta.](confusionmatrix.PNG)
 > **KUVA 3**. Konfuusiomatriisi anturin suunnasta.
