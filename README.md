@@ -12,7 +12,7 @@ Projektissa käytetyt laitteet: NRF5340dk alustaa, Rasberry Pi(raspios_full_arm6
 
 Projektissa käytettyä ohjelmistoa: NRF Connect, VSCode, GitHub, Rufus.
 <br></br>
-![Projektin arkkitehtuurikuva](Arkkitehtuurikuva.drawio.png)
+![Projektin arkkitehtuurikuva](Arkkitehtuurikuva.PNG)
 > **KUVA 1**. Projektin arkkitehtuurikuva
 
 
