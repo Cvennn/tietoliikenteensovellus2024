@@ -34,7 +34,7 @@ Keskipisteitä lasketaan jokaisesta datapisteestä, kunnes keskipisteet eivät e
 
 
 ## K-means luokittelija algoritmi
-nRF5340-DK-alustan painikkeille on ohjelmoitu erilaisia toimintoja. Button 1-painikkeella tulostetaan sarjaväylälle nykyinen konfuusiomatriisi. Button 2-painikkeella saadaan nollataan nykyinen konfuusiomatriisi. Button 3-painikkeella vaihdetaan mittaussuuntaa. Debug-tilassa tehdään 100 testimittausta jokaisesta suunnasta ja tulostetaan konfuusiomatriisi. Button 4-painikkeella otetaan nykyisestä mittaussuunnasta 100 mittausta, jotka merkataan konfuusiomatriisiin.
+nRF5340-DK-alustan painikkeille on ohjelmoitu erilaisia toimintoja. Button 1-painikkeella tulostetaan sarjaväylälle nykyinen konfuusiomatriisi. Button 2-painikkeella nollataan nykyinen konfuusiomatriisi. Button 3-painikkeella vaihdetaan mittaussuuntaa. Debug-tilassa tehdään 100 testimittausta jokaisesta suunnasta ja tulostetaan konfuusiomatriisi. Button 4-painikkeella otetaan nykyisestä mittaussuunnasta 100 mittausta, jotka merkataan konfuusiomatriisiin.
 
 ![Konfuusiomatriisi painikkeet.](nRF5340.png)
 > **KUVA 3**. nRF5340-DK painikkeet.
