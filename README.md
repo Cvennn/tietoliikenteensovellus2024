@@ -1,4 +1,5 @@
 # Tietoliikenteen sovellusprojekti 2024
+Tietoliikenteen ja koneoppimisen sovellusprojekti.
 Projekti on toteutettu kahden hengen ryhmässä.
 
 Antti Niiranen, Juho Sainmaa
