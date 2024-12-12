@@ -59,7 +59,27 @@ void makeHundredFakeClassifications(void)
    varmistaaksesi, että etäisuuden laskenta ja luokittelu toimii varmasti tunnetulla
    itse keksimälläsi sensoridatalla ja itse keksimilläsi keskipisteillä.
    *******************************************/
-   printk("Make your own implementation for this function if you need this\n");
+
+   for (int i=0; i < 100; i++){
+   int winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1800, 1400, 1400);
+   CM[0][winCP] += 1;
+   winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1200, 1400, 1400);
+   CM[1][winCP] += 1;
+
+   winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1400, 1800, 1400);
+   CM[2][winCP] += 1;
+   winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1400, 1200, 1400);
+   CM[3][winCP] += 1;
+
+   winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1400, 1400, 1800);
+   CM[4][winCP] += 1;
+   winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1400, 1400, 1200);
+   CM[5][winCP] += 1;
+   };
+   
+   
+
+
 }
 
 void makeOneClassificationAndUpdateConfusionMatrix(int direction)
@@ -73,8 +93,6 @@ void makeOneClassificationAndUpdateConfusionMatrix(int direction)
   for (int i=0; i < 100; i++){
    struct Measurement m = readADCValue();
    int winCP = calculateDistanceToAllCentrePointsAndSelectWinner(m.x, m.y, m.z);
-   //int winCP = calculateDistanceToAllCentrePointsAndSelectWinner(1700, 1400, 1400);
-   //päivitetään matriisi
    CM[direction][winCP] += 1;
   };
 }
@@ -103,7 +121,6 @@ int calculateDistanceToAllCentrePointsAndSelectWinner(int x,int y,int z)
          winCP = i;
       }
    }
-   printk("closest centrepoint: %d\n", winCP);
    return winCP;
 }
 
